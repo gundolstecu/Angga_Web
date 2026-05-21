@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - angga Website</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(12px);
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 18px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: #ff9a9e;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff9a9e;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 850px;
+            margin: 70px auto;
+            padding: 45px;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+            animation: fadeUp 1s ease;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 25px;
+            font-weight: 700;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        b {
+            color: #ff758c;
+        }
+
+        /* VIDEO */
+        .video-wrapper {
+            margin-top: 30px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            transition: transform 0.4s ease;
+        }
+
+        .video-wrapper:hover {
+            transform: scale(1.02);
+        }
+
+        video {
+            width: 100%;
+            display: block;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #222;
+            color: white;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+
+        /* ANIMATION */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 600px) {
+            .container {
+                margin: 40px 20px;
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                margin: 0 10px;
+                font-size: 0.9rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Hitam dan Emas Modern Profesional Lulusan Baru Resume.pdf">Download CV</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About Me</a>
+    </nav>
+
+    <div class="container">
+        <h1>✨ About Me ✨</h1>
+
+        <p>
+            Hi, saya adalah seorang <b>Web Developer</b> yang berdomisili di Jakarta.
+            Saya sedang fokus mengembangkan skill di dunia web development 🚀
+        </p>
+
+        <p>
+            Walaupun masih dalam tahap belajar, saya memiliki semangat tinggi
+            untuk terus berkembang dan meningkatkan kemampuan 💪
+        </p>
+
+        <p>
+            Target saya adalah menguasai <b>HTML, CSS, dan JavaScript</b>
+            untuk menjadi developer profesional di masa depan 😎
+        </p>
+
+        <div class="video-wrapper">
+            <video controls>
+                <source src="hunt-showdown-death-roots.1920x1080.mp4">
+                Browser kamu tidak mendukung video.
+            </video>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Izzz Website | Dibuat dengan ❤️</p>
+    </footer>
+
+</body>
+</html>
